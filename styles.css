@@ -1,0 +1,29 @@
+body {
+    font-family: 'Urbanist', sans-serif;
+}
+.lp-border-top-brown {
+    border-top: #f08f2a 3px solid;
+}
+
+.lp-border-bottom-brown {
+    border-bottom: #f08f2a 3px solid;
+}
+
+.lp-lead {
+    width: 350px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.lp_lead_bold {
+    font-weight: bold;
+}
+
+.footer-wrapper {
+    background: url("images/bg_footer_wrapper.png") center center no-repeat;
+    background-size: cover ;
+}
+
+.footer-wrapper a {
+    text-decoration: none;
+    color: #fff;
+}
