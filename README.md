@@ -1,1 +1,1 @@
-# temlateLaPalette
+# template La Palette
