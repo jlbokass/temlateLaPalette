@@ -18,60 +18,45 @@
     <title>La Palette | Mangez mieux</title>
 </head>
 <body>
-<div style="height: 100% !important;">
+<div>
     <!-- Top nav -->
-    <div class="lp-border-top-brown">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="lPTopNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="lPTopNav">
-                        <ul class="navbar-nav mr-auto small">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Comment ça marche ?</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Service client</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">S'identifier</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fas fa-shopping-basket"></i> Panier</a>
-                            </li>
-                        </ul>
-                    </div>
+    <div class="d-none d-sm-block bg-white fixed-top" style="height: 40px;">
+        <div class="lp-border-top-brown d-flex align-items-center" style="height: 40px">
+            <div class="container">
+                <div class="list-unstyled d-flex small">
+                    <div class="me-auto"><a href="#" class="lp-link-color-brown-derby">Comment ca marche?</a></div>
+                    <div class="me-4"><a href="#" class="lp-link-color-brown-derby">&#64; Service client</a></div>
+                    <div class="me-4"><a href="#" class="lp-link-background-color-orange">S'identifier</a></div>
+                    <div><a href="#" class="lp-link-color-brown-derby"><i class="fas fa-shopping-basket"></i> Panier</a></div>
                 </div>
-            </nav>
+            </div>
         </div>
     </div>
     <!--./ End of top Nav -->
 
     <!-- Header -->
-    <header>
-        <img src="images/main-bg-with-logo.png" alt="La Palette mangez mieux" class="img-fluid">
-        <div class="lp-border-top-brown lp-border-bottom-brown">
+    <header style="background-color: #fcfbfb">
+        <img src="images/bg-header.png" alt="La Palette mangez mieux" class="img-fluid">
+        <div class="lp-border-top-brown lp-border-bottom-brown" id="navbar">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+                <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lPMainNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="lPMainNav">
-                            <ul class="navbar-nav">
+                            <ul class="navbar-nav" style="font-size: 1.2rem; font-weight: bold">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Accueil</a>
+                                    <a class="nav-link lp-link-color-brown-derby" aria-current="page" href="#">Accueil</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Vitrine</a>
+                                    <a class="nav-link lp-link-color-brown-derby" href="#">Vitrine</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Nos formules</a>
+                                    <a class="nav-link lp-link-color-brown-derby" href="#">Nos formules</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link lp-link-color-brown-derby" href="#">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -85,11 +70,14 @@
 
 <!-- Section 1 -->
 <div class="lp-section1">
-    <p class="lead lp-lead text-center mx-auto pt-5">Les prodduits frais que VOUS choisissez toute l'année au meilleur prix !</p>
+    <p class="lead lp-lead text-center mx-auto pt-5 lp-text-brown" style="font-weight: bold; font-size: 1.7rem">Les prodduits frais que VOUS choisissez <br>toute l'année au meilleur prix !</p>
     <p class="w-50 mx-auto text-center">
         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores culpa harum maxime obcaecati porro provident quibusdam rem reprehenderit sed similique. Facere incidunt non nulla quisquam repellat, sed tenetur vitae voluptatum.</span><span>A commodi deserunt porro similique? At dignissimos illo nisi soluta tempora? Adipisci doloribus eius quis! Culpa hic sequi temporibus. Asperiores assumenda eos ex laborum quos recusandae sapiente voluptas? Debitis, recusandae!</span>
     </p>
-    <p class="lead lp_lead_bold mx-auto text-center">Des étapes simple pour faire partie ds privilégiés</p>
+    <div class="container text-center py-4">
+        <img src="images/separator.png" class="img-fluid" alt="La Palette">
+    </div>
+    <p class="lead lp_lead_bold mx-auto text-center mb-5" style="font-size: 1.7rem">Des étapes simple pour faire partie ds privilégiés</p>
     <div class="container">
         <div class="row text-center">
             <div class="col-md-4">
@@ -107,7 +95,7 @@
         </div>
     </div>
     <div class="text-center mt-4 mb-5">
-        <button class="btn btn-info">Je crée mon compte</button>
+        <a href="#" class="lp-btn-orange-big">Je crée mon compte</a>
     </div>
 </div>
 <!--./ End of section -->
@@ -116,21 +104,24 @@
 <div class="">
     <div class="row g-0">
         <div class="col-md-6">
-            <img src="images/img-col-2.png" class="img-fluid" alt="La Palette toute les couleurs dans votre assiette">
+    <img src="images/img-col-2.png" class="img-fluid" alt="La Palette toute les couleurs dans votre assiette">
+<!--            <div class="ratio ratio-16x9">-->
+<!--                <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>-->
+<!--            </div>-->
         </div>
         <div class="col-md-6" style="background-color: #f08f2a">
-            <p class="lead lp-lead text-center mx-auto py-3" style="color: white">Mieux connaitre Aurélien Peluyet ...</p>
+            <p class="lead lp-lead text-center mx-auto py-3" style="color: white; font-size: 1.7rem">Mieux connaitre Aurélien Peluyet ...</p>
             <p class="text-center px-3">
                 Aurélien, primeur depuis 10 ans exerce son métier avec passion ! Il a à cœur de choisir des produits d’excellente qualité pour satisfaire ses clients. Lui-même a pu constater la flambée des prix depuis quelques années et a souhaité rendre accessible au plus grand nombre le « manger mieux ».
                 Avec La Palette, c’est enfin possible !
             </p>
         </div>
         <div class="col-md-6">
-            <p class="lead lp-lead text-center mx-auto py-3">Mieux connaitre Aurélien Peluyet ...</p>
-            <p class="text-center px-3">En panne d’inspiration ? La Palette s’occupe de tout !Découvrez nos recettes pour profiter au mieux de nos produits de saison
+            <p class="lead lp-lead text-center mx-auto py-3" style="font-size: 1.7rem">Mieux connaitre Aurélien Peluyet ...</p>
+            <p class="text-center px-3">En panne d’inspiration ? La Palette s’occupe de tout !<br>Découvrez nos recettes pour profiter au mieux de nos produits de saison
             </p>
             <div class="text-center">
-                <button class="btn btn-info">Voir nos recettes</button>
+                <a href="#" class="lp-btn-orange-big">Voir nos recettes</a>
             </div>
         </div>
         <div class="col-md-6">
@@ -139,10 +130,11 @@
     </div>
 </div>
 <!--./ End of section 2 -->
+
 <div class="footer-wrapper pt-4">
-    <div class="container">
-        <div class="row justify-content-end">
-            <div class="col-md-4">
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between">
+            <div class="">
                 <p class="text-white"><strong>Aurélin PELUYET</strong></p>
                 <ul class="list-unstyled">
                     <li><a href="#">Le concept</a></li>
@@ -153,12 +145,12 @@
                     <li><a href="#">Parrainage</a></li>
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="text-center">
                 <img src="images/Logo_La-Palette_Monochrome-Blanc.png" class="img-fluid" alt="Logo la Palette">
                 <p class="text-center text-white mt-5">300, route de Jarcieu<br>26210 EPINOUZE<br>France</p>
                 <p class="text-center text-white mt-3">Tél +33(0)6 79 11 99 91</p>
             </div>
-            <div class="col-md-4">
+            <div class="">
                 <ul class="mb-3 list-unstyled list-inline mb-3">
                     <li class="list-inline-item"><a href="#" class="lp-social-links"><i class="fab fa-instagram fa-2x"></i></a></li>
                     <li class="list-inline-item"><a href="#" class="lp-social-links"><i class="fab fa-facebook fa-2x"></i></a></li>
@@ -173,8 +165,39 @@
         </div>
     </div>
 </div>
+<!--./ End of footer-wrapper -->
+
+<!-- Footer -->
+<footer class="footer" style="background-color: #1b0c06">
+    <div class="container">
+        <div class="row pt-3">
+            <div class="col-md-6">
+                <p class="text-white p-0">&copy; LA PALETTE - Tous drois réservés - 2021</p>
+            </div>
+            <div class="col-md-6 text-end">
+                <p class="text-white p-0">Conception &nbsp;<a href="#"> <img src="images/Logo-vt-communication.png" class="img-fluid" alt="Logo VT COMUNICATION"></a> -&nbsp; Réalisation &nbsp;<a href="#" class=""> JLGB</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--./End of footer -->
 
 <!-- Optional JavaScript; choose one of the two! -->
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
