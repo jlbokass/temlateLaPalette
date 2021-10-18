@@ -10,6 +10,16 @@ a.lp-link-color-brown-derby {
     color: #5c4537;
 }
 
+a.lp-link-color-brown-derby:hover {
+    text-decoration: underline;
+    color: #99715b;
+}
+
+
+.lp-active {
+    text-decoration: underline;
+}
+
 #navbar {
     /*overflow: hidden;*/
     background-color: #fcfbfb;
@@ -51,7 +61,7 @@ a.lp-link-color-brown-derby {
     background-size: cover ;
 }
 
-.footer-wrapper a {
+.footer-wrapper a, footer a {
     color: #fff;
 }
 
